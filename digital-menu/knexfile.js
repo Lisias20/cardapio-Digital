@@ -4,14 +4,14 @@ module.exports = {
   development: {
     client: 'sqlite3',
     connection: {
-      filename: process.env.SQLITE_FILE || './dev.sqlite3'
+      filename: process.env.SQLITE_FILE || './data/dev.sqlite3'
     },
     useNullAsDefault: true,
     migrations: {
-      directory: './src/db/migrations'
+      directory: './src/migrations'
     },
     seeds: {
-      directory: './src/db/seeds'
+      directory: './src/seeds'
     },
     pool: {
       afterCreate: (conn, done) => {
