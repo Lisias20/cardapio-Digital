@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou - Cardápio</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="pc-header">
+    <h1 class="pc-logo">Pediu Chegou</h1>
+    <button class="pc-cart-btn" id="cart-btn">🛒<span id="cart-count">0</span></button>
+  </header>
+
+  <main class="pc-container">
+    <section id="menu-container" class="pc-menu">
+      <!-- categorias e produtos serão injetados aqui via JS -->
+    </section>
+  </main>
+
+  <!-- carrinho flutuante: aparece quando o usuário adiciona algo -->
+  <div class="pc-cart-floating" id="cart-floating">
+    <span>Ver Carrinho</span>
+    <span id="cart-total">R$ 0,00</span>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/store.js"></script>
+</body>
+</html>
