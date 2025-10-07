@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou — Login</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho enxuto -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Admin • Pediu Chegou</h1>
+  </header>
+
+  <!-- Container central -->
+  <main class="pc-container login-container">
+    <form id="login-form" class="login-form">
+      <h2>Entrar no Painel</h2>
+
+      <!-- Campo de email -->
+      <input
+        id="email"
+        type="email"
+        placeholder="E-mail"
+        autocomplete="username"
+        required
+      />
+
+      <!-- Campo de senha -->
+      <input
+        id="password"
+        type="password"
+        placeholder="Senha"
+        autocomplete="current-password"
+        required
+      />
+
+      <!-- Botão -->
+      <button type="submit" class="pc-add-btn">Entrar</button>
+
+      <!-- Mensagem de erro -->
+      <p id="login-msg" class="login-msg"></p>
+    </form>
+  </main>
+
+  <!-- Script -->
+  <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou — Mesas</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Mesas • Pediu Chegou</h1>
+  </header>
+
+  <main class="pc-container">
+    <!-- Formulário para criar mesa -->
+    <section class="table-form">
+      <h2>Nova Mesa</h2>
+      <input id="table-name" type="text" placeholder="Nome / Número da mesa" />
+      <button id="btn-add-table">Adicionar</button>
+    </section>
+
+    <!-- Lista de mesas existentes -->
+    <section class="tables-list" id="tables-list">
+      <!-- Renderizado via JS -->
+    </section>
+  </main>
+
+  <script src="../js/tables.js"></script>
+</body>
+</html>

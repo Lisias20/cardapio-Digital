@@ -373,3 +373,84 @@ body {
   justify-content: space-between;
   padding: 4px 0;
 }
+/* === Tela de Login === */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.login-form {
+  background: var(--cor-cinza);
+  padding: 32px;
+  border-radius: var(--raio);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+.login-form h2 {
+  margin-top: 0;
+  color: var(--cor-vermelha);
+}
+
+.login-form input {
+  padding: 10px;
+  border-radius: var(--raio);
+  border: 1px solid #444;
+  background: #111;
+  color: var(--cor-branca);
+}
+.login-form button {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 1rem;
+}
+.login-msg {
+  font-size: 0.9rem;
+  color: var(--cor-vermelha);
+  min-height: 1.2em;
+}
+/* === Gerenciamento de Mesas === */
+
+.table-form {
+  background: #111;
+  padding: 16px;
+  border-radius: var(--raio);
+  margin-bottom: 24px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tables-list {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.table-card {
+  background: var(--cor-cinza);
+  border: 2px solid var(--cor-vermelha);
+  border-radius: var(--raio);
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.table-card span {
+  font-weight: 600;
+}
+.table-card button {
+  background: var(--cor-vermelha);
+  border: none;
+  border-radius: var(--raio);
+  padding: 6px 10px;
+  color: var(--cor-branca);
+  cursor: pointer;
+}
