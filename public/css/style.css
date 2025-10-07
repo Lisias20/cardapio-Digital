@@ -1,0 +1,123 @@
+/* === Tema principal: Preto, Vermelho e Branco === */
+:root {
+  --cor-preta: #000;
+  --cor-vermelha: #e50914;
+  --cor-branca: #fff;
+  --cor-cinza: #2b2b2b;
+  --espaco: 16px;
+  --raio: 8px;
+  font-family: system-ui, sans-serif;
+}
+
+/* Limpeza básica */
+body {
+  margin: 0;
+  background: var(--cor-preta);
+  color: var(--cor-branca);
+}
+
+.pc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--cor-preta);
+  border-bottom: 2px solid var(--cor-vermelha);
+  padding: var(--espaco);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.pc-logo {
+  margin: 0;
+  color: var(--cor-vermelha);
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.pc-cart-btn {
+  background: var(--cor-vermelha);
+  border: none;
+  color: var(--cor-branca);
+  font-size: 1.2rem;
+  border-radius: var(--raio);
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.pc-cart-btn span {
+  margin-left: 4px;
+}
+
+/* Container do menu */
+.pc-menu {
+  padding: var(--espaco);
+}
+
+.pc-category {
+  margin-bottom: calc(var(--espaco) * 2);
+}
+
+.pc-category h2 {
+  border-left: 4px solid var(--cor-vermelha);
+  padding-left: 8px;
+  margin-bottom: var(--espaco);
+}
+
+.pc-products {
+  display: grid;
+  gap: var(--espaco);
+}
+
+.pc-product {
+  background: var(--cor-cinza);
+  border-radius: var(--raio);
+  padding: var(--espaco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pc-product-info {
+  flex: 1;
+}
+
+.pc-product-name {
+  margin: 0 0 4px;
+  font-weight: bold;
+}
+
+.pc-product-price {
+  color: var(--cor-vermelha);
+}
+
+.pc-add-btn {
+  background: var(--cor-vermelha);
+  border: none;
+  border-radius: var(--raio);
+  color: var(--cor-branca);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.pc-add-btn:hover {
+  filter: brightness(1.2);
+}
+
+/* Botão de carrinho flutuante */
+.pc-cart-floating {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cor-vermelha);
+  color: var(--cor-branca);
+  border-radius: 999px;
+  padding: 12px 24px;
+  display: none;
+  justify-content: space-between;
+  width: 200px;
+  cursor: pointer;
+}
+.pc-cart-floating.show {
+  display: flex;
+}
