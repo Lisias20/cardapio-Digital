@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou - Acompanhar Pedido</title>
+  <!-- Importando o mesmo estilo do resto do front -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho fixo -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Pediu Chegou</h1>
+  </header>
+
+  <!-- Container principal -->
+  <main class="pc-container">
+
+    <!-- Título com número do pedido -->
+    <h2 id="order-title">Pedido</h2>
+
+    <!-- Área onde o status atual será mostrado -->
+    <div class="pc-order-status" id="order-status">
+      Carregando status do pedido...
+    </div>
+
+    <!-- Resumo de totais -->
+    <div class="pc-order-summary" id="order-summary"></div>
+
+    <!-- Lista de itens do pedido -->
+    <section id="order-items" class="pc-cart-list"></section>
+
+    <!-- Mensagem de atualização -->
+    <p id="order-updated" class="pc-order-updated">Última atualização:</p>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/common.js"></script>
+  <script src="js/order.js"></script>
+</body>
+</html>

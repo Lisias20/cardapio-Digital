@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou - Checkout</title>
+  <!-- Importa o CSS do projeto -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho fixo: fundo preto e nome da loja -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Pediu Chegou</h1>
+  </header>
+
+  <!-- Container principal do conteúdo -->
+  <main class="pc-container">
+
+    <!-- Lista de itens do carrinho -->
+    <section id="cart-items" class="pc-cart-list">
+      <!-- Itens renderizados via JS -->
+    </section>
+
+    <!-- Resumo dos totais -->
+    <div class="pc-checkout-summary" id="checkout-summary">
+      <!-- Totais preenchidos via JS -->
+    </div>
+
+    <!-- Formulário de informações básicas -->
+    <form id="checkout-form" class="pc-checkout-form">
+      <h3>Dados do Pedido</h3>
+
+      <!-- Tipo de pedido -->
+      <label>Tipo de pedido:</label>
+      <select id="type" required>
+        <option value="pickup">Retirar</option>
+        <option value="delivery">Delivery</option>
+      </select>
+
+      <!-- Campos para delivery -->
+      <div id="delivery-fields" style="display:none">
+        <label>Nome:</label>
+        <input id="customer-name" type="text" placeholder="Seu nome" />
+
+        <label>Telefone:</label>
+        <input id="customer-phone" type="text" placeholder="(XX) XXXXX-XXXX" />
+
+        <label>Endereço:</label>
+        <input id="customer-address" type="text" placeholder="Rua, número, bairro" />
+      </div>
+
+      <!-- Cupom (opcional) -->
+      <label>Cupom:</label>
+      <input id="coupon" type="text" placeholder="Digite seu cupom" />
+
+      <!-- Botão para confirmar o pedido -->
+      <button type="submit" class="pc-add-btn" id="btn-confirmar">
+        Confirmar Pedido
+      </button>
+    </form>
+  </main>
+
+  <!-- Importa JS -->
+  <script src="js/common.js"></script>
+  <script src="js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou — Cardápio</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Pediu Chegou - Menu</h1>
+  </header>
+
+  <main class="pc-container">
+    <!-- Formulário novo produto -->
+    <section class="menu-form">
+      <h2>Novo Produto</h2>
+      <input id="nome-prod" type="text" placeholder="Nome do produto" />
+      <input id="preco-prod" type="number" placeholder="Preço em R$" step="0.01" />
+      <select id="cat-prod"></select>
+      <button id="btn-add">Adicionar</button>
+    </section>
+
+    <!-- Listagem de categorias e produtos -->
+    <section id="menu-list" class="menu-list"></section>
+  </main>
+
+  <script src="../js/menu.js"></script>
+</body>
+</html>

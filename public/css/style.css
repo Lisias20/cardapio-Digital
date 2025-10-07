@@ -121,3 +121,255 @@ body {
 .pc-cart-floating.show {
   display: flex;
 }
+/* === Estilo adicional do checkout === */
+
+.pc-cart-list {
+  margin-top: 16px;
+}
+
+.pc-checkout-summary {
+  margin-top: 24px;
+  padding: 16px;
+  background: var(--cor-cinza);
+  border-radius: var(--raio);
+}
+
+.pc-checkout-form {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pc-checkout-form input,
+.pc-checkout-form select {
+  padding: 10px;
+  border-radius: var(--raio);
+  border: 1px solid #444;
+  background: #111;
+  color: var(--cor-branca);
+}
+.pc-checkout-form button {
+  margin-top: 16px;
+  font-size: 1rem;
+}
+
+/* === Estilo adicional para acompanhamento do pedido === */
+
+.pc-order-status {
+  margin-top: 16px;
+  padding: 16px;
+  background: var(--cor-cinza);
+  border-left: 4px solid var(--cor-vermelha);
+  border-radius: var(--raio);
+  font-weight: bold;
+  color: var(--cor-branca);
+}
+
+.pc-order-summary {
+  margin-top: 16px;
+  padding: 16px;
+  background: #111;
+  border-radius: var(--raio);
+}
+
+.pc-order-updated {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* === KDS === */
+
+.kds-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* Cartão de pedido */
+.kds-card {
+  background: var(--cor-cinza);
+  border: 2px solid var(--cor-vermelha);
+  border-radius: var(--raio);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Cabeçalho do pedido */
+.kds-card h3 {
+  margin: 0;
+  color: var(--cor-vermelha);
+}
+
+/* Itens internos */
+.kds-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+}
+
+/* Botões de ação */
+.kds-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.kds-btn {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: var(--raio);
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--cor-branca);
+}
+.kds-btn.ready { background: #1db954; }
+.kds-btn.delivering { background: #ffaa00; }
+.kds-btn.finished { background: var(--cor-vermelha); }
+
+/* === Parte do Dashboard === */
+
+/* Contêiner dos números principais */
+.dash-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+/* Cada bloco de métrica */
+.metric-card {
+  flex: 1;
+  min-width: 180px;
+  background: var(--cor-cinza);
+  border: 2px solid var(--cor-vermelha);
+  border-radius: var(--raio);
+  padding: 16px;
+  text-align: center;
+}
+
+.metric-card h3 {
+  margin: 0;
+  color: var(--cor-vermelha);
+}
+
+.metric-card p {
+  margin: 4px 0 0;
+  font-size: 1.4rem;
+}
+
+/* Lista de pedidos */
+.dash-orders {
+  background: #111;
+  border-radius: var(--raio);
+  padding: 16px;
+}
+
+.dash-orders h2 {
+  color: var(--cor-vermelha);
+  margin-top: 0;
+}
+
+.dash-order-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+}
+.dash-order-item:last-child {
+  border-bottom: none;
+}
+
+.dash-order-item span:first-child {
+  flex: 1;
+}
+/* === Lista de Pedidos === */
+
+.orders-filter {
+  margin: 16px 0;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--cor-cinza);
+  border-radius: var(--raio);
+  overflow: hidden;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #333;
+  text-align: left;
+}
+
+.orders-table th {
+  background: #111;
+  color: var(--cor-vermelha);
+}
+.orders-table tr:hover {
+  background: #222;
+}
+
+.orders-table button {
+  background: var(--cor-vermelha);
+  border: none;
+  border-radius: var(--raio);
+  padding: 6px 10px;
+  color: var(--cor-branca);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+/* === Menu Admin === */
+
+.menu-form {
+  background: #111;
+  padding: 16px;
+  border-radius: var(--raio);
+  margin-bottom: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.menu-form input, .menu-form select {
+  padding: 8px;
+  border-radius: var(--raio);
+  border: 1px solid #444;
+  background: #000;
+  color: var(--cor-branca);
+}
+.menu-form button {
+  background: var(--cor-vermelha);
+  border: none;
+  color: var(--cor-branca);
+  padding: 8px 12px;
+  border-radius: var(--raio);
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.menu-cat {
+  background: var(--cor-cinza);
+  border-radius: var(--raio);
+  padding: 12px;
+}
+.menu-cat h3 {
+  color: var(--cor-vermelha);
+  margin-top: 0;
+}
+.menu-prod-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+}

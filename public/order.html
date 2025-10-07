@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou — Pedidos</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="pc-header">
+    <h1 class="pc-logo">Pediu Chegou - Pedidos</h1>
+  </header>
+
+  <!-- Container principal -->
+  <main class="pc-container">
+    <!-- Filtro de status -->
+    <section class="orders-filter">
+      <label for="status">Filtrar por status:</label>
+      <select id="status">
+        <option value="">Todos</option>
+        <option value="received">Recebido</option>
+        <option value="preparing">Em preparo</option>
+        <option value="ready">Pronto</option>
+        <option value="delivering">A caminho</option>
+        <option value="finished">Concluído</option>
+        <option value="canceled">Cancelado</option>
+      </select>
+    </section>
+
+    <!-- Tabela de pedidos -->
+    <table class="orders-table" id="orders-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Tipo</th>
+          <th>Status</th>
+          <th>Total</th>
+          <th>Criado em</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="orders-body"></tbody>
+    </table>
+  </main>
+
+  <!-- Script JS -->
+  <script src="../js/orders.js"></script>
+</body>
+</html>

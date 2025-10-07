@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediu Chegou — Dashboard</title>
+  <!-- Usa o mesmo CSS global -->
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho fixo do painel -->
+  <header class="pc-header">
+    <!-- Nome da loja -->
+    <h1 class="pc-logo">Pediu Chegou - Painel</h1>
+  </header>
+
+  <!-- Container principal -->
+  <main class="pc-container dashboard">
+
+    <!-- Blocos superiores com números principais -->
+    <section class="dash-metrics" id="dash-metrics">
+      <!-- Dados aparecem aqui via JS -->
+    </section>
+
+    <!-- Listagem de pedidos recentes -->
+    <section class="dash-orders">
+      <h2>Últimos Pedidos</h2>
+      <div id="last-orders"></div>
+    </section>
+
+  </main>
+
+  <!-- Script JS do dashboard -->
+  <script src="../js/dashboard.js"></script>
+</body>
+</html>
